@@ -290,13 +290,27 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: #000;
-    border: 2px solid #000;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+    transition: all 0.2s ease;
 }
 
 .btn-secondary:hover {
-    background: #000;
-    color: #fff;
+    background: var(--text-primary);
+    color: var(--text-inverse);
+}
+
+/* Dark mode specific styling for secondary buttons */
+[data-theme="dark"] .btn-secondary {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+    background: #f0f0f0;
+    color: #000;
+    border-color: #f0f0f0;
 }
 
 /* Responsive Styles */

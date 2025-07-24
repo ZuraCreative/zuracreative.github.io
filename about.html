@@ -60,11 +60,28 @@
             transition: background-color 0.3s ease;
         }
 
+        .team-row {
+            margin-bottom: 6rem;
+        }
+
+        .team-row:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .team-row-header {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 3rem;
+            letter-spacing: -0.01em;
+            transition: color 0.3s ease;
+        }
+
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 4rem;
-            margin-top: 4rem;
         }
 
         .team-member {
@@ -172,6 +189,10 @@
                 padding: 12rem 0 6rem 0;
             }
 
+            .team-row {
+                margin-bottom: 4rem;
+            }
+
             .team-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -216,42 +237,151 @@
     <section class="section team-section">
         <div class="container">
             <h2 class="section-title">Meet Our Team</h2>
-            <div class="team-grid">
-                
-                <!-- Employee Template - Replace with actual employee information -->
-                <div class="team-member">
-                    <div class="team-photo">
-                        <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
-                        👤
+            
+            <!-- TEAM ROW 1: Leadership Team -->
+            <div class="team-row">
+                <h3 class="team-row-header">Leadership Team</h3>
+                <div class="team-grid">
+                    
+                    <!-- Employee Template - Replace with actual employee information -->
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            <img src="assets/adam.jpeg" alt="👤"> 
+                        </div>
+                        <h4 class="team-name">Adam Fisher</h4>
+                        <p class="team-role">Co-Founder</p>
+                        <p class="team-description"></p>
                     </div>
-                    <h3 class="team-name">Employee Name</h3>
-                    <p class="team-role">Role Title</p>
-                    <p class="team-description">Brief description of the employee's background, expertise, and role at Zura Creative. This should highlight their unique contributions to the team and their passion for helping golf brands succeed.</p>
-                </div>
 
-                <!-- Add more team members by copying the template above -->
-                <div class="team-member">
-                    <div class="team-photo">
-                        <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
-                        👤
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            <img src="assets/eli.jpeg" alt="👤"> 
+                        </div>
+                        <h4 class="team-name">Eli Palmer</h4>
+                        <p class="team-role">Co-Founder</p>
+                        <p class="team-description"></p>
                     </div>
-                    <h3 class="team-name">Another Employee</h3>
-                    <p class="team-role">Another Role</p>
-                    <p class="team-description">Another brief description of this team member's background, skills, and how they contribute to Zura Creative's mission of creating exceptional video content for golf brands.</p>
-                </div>
 
-                <!-- Template for additional team members -->
-                <div class="team-member">
-                    <div class="team-photo">
-                        <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
-                        👤
-                    </div>
-                    <h3 class="team-name">Third Employee</h3>
-                    <p class="team-role">Third Role</p>
-                    <p class="team-description">Description of this team member's expertise and how they help drive results for golf brands through strategic creative development and campaign optimization.</p>
                 </div>
-
             </div>
+
+            <!-- TEAM ROW 2: Creative Team -->
+            <div class="team-row">
+                <h3 class="team-row-header">Creative Team</h3>
+                <div class="team-grid">
+                    
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Roy Kane</h4>
+                        <p class="team-role">Creative Director</p>
+                        <p class="team-description"></p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Evan Matthews</h4>
+                        <p class="team-role">AI Content Creator & Web Developer</p>
+                        <p class="team-description"></p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Designer Name</h4>
+                        <p class="team-role">Visual Designer</p>
+                        <p class="team-description">Expert in creating stunning visual designs and graphics that enhance video content and drive engagement across social platforms.</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Designer Name</h4>
+                        <p class="team-role">Visual Designer</p>
+                        <p class="team-description">Expert in creating stunning visual designs and graphics that enhance video content and drive engagement across social platforms.</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Designer Name</h4>
+                        <p class="team-role">Visual Designer</p>
+                        <p class="team-description">Expert in creating stunning visual designs and graphics that enhance video content and drive engagement across social platforms.</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Designer Name</h4>
+                        <p class="team-role">Visual Designer</p>
+                        <p class="team-description">Expert in creating stunning visual designs and graphics that enhance video content and drive engagement across social platforms.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TEAM ROW 3: Marketing Team -->
+            <div class="team-row">
+                <h3 class="team-row-header">Marketing Team</h3>
+                <div class="team-grid">
+                    
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Marketing Manager Name</h4>
+                        <p class="team-role">Marketing Manager</p>
+                        <p class="team-description">Strategic marketing professional with deep knowledge of Meta advertising and social media campaign optimization for the golf industry.</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                            👤
+                        </div>
+                        <h4 class="team-name">Account Manager Name</h4>
+                        <p class="team-role">Senior Account Manager</p>
+                        <p class="team-description">Client relationship specialist who ensures seamless communication and successful campaign execution for our golf brand partners.</p>
+                    </div>
+
+                </div>
+            </div>
+ 
+            <!-- TEMPLATE FOR ADDING NEW TEAM ROWS:
+            Copy the structure below and modify the team-row-header and add team members as needed.
+            
+            <div class="team-row">
+                <h3 class="team-row-header">New Department Name</h3>
+                <div class="team-grid">
+                    
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="path/to/photo.jpg" alt="Employee Name">
+                        </div>
+                        <h4 class="team-name">Employee Name</h4>
+                        <p class="team-role">Job Title</p>
+                        <p class="team-description">Employee description and expertise.</p>
+                    </div>
+
+                </div>
+            </div> -->
+
         </div>
     </section>
 

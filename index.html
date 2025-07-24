@@ -130,17 +130,16 @@
             color: var(--text-primary);
         }
 
-        /* Dark mode specific styling for secondary button */
+        /* Override dark mode styling for contact section secondary buttons */
         [data-theme="dark"] .contact .btn-secondary {
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            border-color: var(--bg-primary);
+            background: transparent;
+            color: var(--text-inverse);
+            border-color: var(--text-inverse);
         }
 
         [data-theme="dark"] .contact .btn-secondary:hover {
-            background: var(--bg-secondary);
+            background: var(--text-inverse);
             color: var(--text-primary);
-            border-color: var(--bg-secondary);
         }
 
         @media (max-width: 768px) {
@@ -170,7 +169,7 @@
         <div class="container">
             <h1>We make AI-powered video content for golf brands that drives sales.</h1>
             <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get a Free Video</a>
+                <a href="#contact" class="btn btn-secondary">Get a Free Video</a>
                 <a href="#contact" class="btn btn-secondary">Book a Discovery Call</a>
             </div>
         </div>
@@ -224,7 +223,7 @@
             <h2 class="section-title">Ready to stand out in the golf world?</h2>
             <div class="cta-buttons">
                 <a href="mailto:hello@zuracreative.com" class="btn btn-primary">Get a Free Video</a>
-                <a href="https://calendly.com/zuracreative" class="btn btn-secondary">Book a Discovery Call</a>
+                <a href="https://calendly.com/zuracreative" class="btn btn-primary">Book a Discovery Call</a>
             </div>
         </div>
     </section>
