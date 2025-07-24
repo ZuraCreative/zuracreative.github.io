@@ -1,3 +1,1 @@
-# Zura
-
-Welcome 🙂
+Zura Creative is currently under construction- check back with us later!
