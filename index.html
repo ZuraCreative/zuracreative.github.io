@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zura Creative - AI-Powered Video Content for Golf Brands</title>
+    <link rel="stylesheet" href="shared-styles.css">
+    <style>
+        /* Page-specific styles */
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 16rem 0 12rem 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 8rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 4rem;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+        }
+
+        .about-text {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        .about-highlight {
+            font-size: clamp(1.25rem, 2.5vw, 2rem);
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .services-grid {
+            display: grid;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .service-item {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-medium);
+            transition: border-color 0.3s ease;
+        }
+
+        .service-item:last-child {
+            border-bottom: none;
+        }
+
+        .service-title {
+            font-size: clamp(1.75rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .service-description {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            color: var(--text-secondary);
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .social-proof {
+            text-align: center;
+            background: var(--bg-secondary);
+            transition: background-color 0.3s ease;
+        }
+
+        .social-proof-text {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-style: italic;
+            transition: color 0.3s ease;
+        }
+
+        .contact {
+            text-align: center;
+            background: var(--bg-dark);
+            color: var(--text-inverse);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .contact h2 {
+            color: var(--text-inverse);
+            margin-bottom: 4rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact .btn-primary {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            border-color: var(--bg-primary);
+        }
+
+        .contact .btn-primary:hover {
+            background: var(--bg-secondary);
+            border-color: var(--bg-secondary);
+        }
+
+        .contact .btn-secondary {
+            color: var(--text-inverse);
+            border-color: var(--text-inverse);
+        }
+
+        .contact .btn-secondary:hover {
+            background: var(--text-inverse);
+            color: var(--text-primary);
+        }
+
+        /* Dark mode specific styling for secondary button */
+        [data-theme="dark"] .contact .btn-secondary {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            border-color: var(--bg-primary);
+        }
+
+        [data-theme="dark"] .contact .btn-secondary:hover {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border-color: var(--bg-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 4rem 0;
+                min-height: auto;
+            }
+
+            .hero {
+                padding: 12rem 0 6rem 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <script src="includes.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Header / Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>We make AI-powered video content for golf brands that drives sales.</h1>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get a Free Video</a>
+                <a href="#contact" class="btn btn-secondary">Book a Discovery Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Zura Creative</h2>
+            <p class="about-text">Zura Creative is a marketing agency for golf brands.</p>
+            <p class="about-text">We create high-performing AI videos and run paid social campaigns that convert.</p>
+            <p class="about-highlight">Built for TikTok and Instagram. Powered by Meta. Backed by strategy.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3 class="service-title">AI Video Packages</h3>
+                    <p class="service-description">Custom videos built to perform on social.</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-title">Ad Creative Optimization</h3>
+                    <p class="service-description">For golf brands already running Meta ads.</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-title">UGC-Style Videos</h3>
+                    <p class="service-description">Coming soon.</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-title">Short-Term Campaigns or Ongoing Partnerships</h3>
+                    <p class="service-description">Flexible for your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="section social-proof">
+        <div class="container">
+            <p class="social-proof-text">Currently in pilot campaigns with fast-growing golf brands.</p>
+        </div>
+    </section>
+
+    <!-- Contact / Final CTA Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to stand out in the golf world?</h2>
+            <div class="cta-buttons">
+                <a href="mailto:hello@zuracreative.com" class="btn btn-primary">Get a Free Video</a>
+                <a href="https://calendly.com/zuracreative" class="btn btn-secondary">Book a Discovery Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+</html> 

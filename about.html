@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Zura Creative</title>
+    <link rel="stylesheet" href="shared-styles.css">
+    <style>
+        /* Page-specific styles */
+        .hero {
+            text-align: center;
+            padding: 16rem 0 8rem 0;
+            background: var(--bg-secondary);
+            transition: background-color 0.3s ease;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            color: var(--text-secondary);
+            font-weight: 400;
+            max-width: 800px;
+            margin: 0 auto;
+            transition: color 0.3s ease;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        .about-highlight {
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        /* Team Section Styles */
+        .team-section {
+            background: var(--bg-secondary);
+            transition: background-color 0.3s ease;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .team-member {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 20px var(--shadow-light);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px var(--shadow-medium);
+        }
+
+        .team-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            background: var(--border-medium);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--text-tertiary);
+            overflow: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .team-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        .team-role {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        .team-description {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        /* Values Section */
+        .values-section {
+            background: var(--bg-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .value-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        .value-description {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 12rem 0 6rem 0;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .team-member {
+                padding: 2rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+    <script src="includes.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>About Zura Creative</h1>
+            <p class="hero-subtitle">We're a marketing agency dedicated to helping golf brands grow through AI-powered video content and strategic social media campaigns.</p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <p class="about-highlight">Built for TikTok and Instagram. Powered by Meta. Backed by strategy.</p>
+                <p class="about-text">At Zura Creative, we understand the unique challenges golf brands face in today's digital landscape. We combine cutting-edge AI technology with deep industry knowledge to create video content that not only captures attention but converts viewers into customers.</p>
+                <p class="about-text">Our team specializes in crafting high-performing social media campaigns that speak directly to golf enthusiasts, helping brands connect with their target audience in authentic and meaningful ways.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                
+                <!-- Employee Template - Replace with actual employee information -->
+                <div class="team-member">
+                    <div class="team-photo">
+                        <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                        👤
+                    </div>
+                    <h3 class="team-name">Employee Name</h3>
+                    <p class="team-role">Role Title</p>
+                    <p class="team-description">Brief description of the employee's background, expertise, and role at Zura Creative. This should highlight their unique contributions to the team and their passion for helping golf brands succeed.</p>
+                </div>
+
+                <!-- Add more team members by copying the template above -->
+                <div class="team-member">
+                    <div class="team-photo">
+                        <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                        👤
+                    </div>
+                    <h3 class="team-name">Another Employee</h3>
+                    <p class="team-role">Another Role</p>
+                    <p class="team-description">Another brief description of this team member's background, skills, and how they contribute to Zura Creative's mission of creating exceptional video content for golf brands.</p>
+                </div>
+
+                <!-- Template for additional team members -->
+                <div class="team-member">
+                    <div class="team-photo">
+                        <!-- Replace with actual employee photo: <img src="path/to/photo.jpg" alt="Employee Name"> -->
+                        👤
+                    </div>
+                    <h3 class="team-name">Third Employee</h3>
+                    <p class="team-role">Third Role</p>
+                    <p class="team-description">Description of this team member's expertise and how they help drive results for golf brands through strategic creative development and campaign optimization.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <span class="value-icon">🎯</span>
+                    <h3 class="value-title">Results-Driven</h3>
+                    <p class="value-description">Every video we create and campaign we run is designed with one goal in mind: driving measurable results for your golf brand.</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🚀</span>
+                    <h3 class="value-title">Innovation</h3>
+                    <p class="value-description">We stay ahead of the curve by leveraging the latest AI technology and social media trends to keep your brand competitive.</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🤝</span>
+                    <h3 class="value-title">Partnership</h3>
+                    <p class="value-description">We work closely with our clients as true partners, understanding your unique challenges and goals to deliver tailored solutions.</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">⚡</span>
+                    <h3 class="value-title">Efficiency</h3>
+                    <p class="value-description">Our streamlined processes and AI-powered tools allow us to deliver high-quality content quickly and cost-effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>
