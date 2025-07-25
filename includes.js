@@ -54,43 +54,5 @@ async function initializeIncludes() {
     setTimeout(setActiveNavLink, 100);
 }
 
-// Theme management
-function initializeTheme() {
-    // Get saved theme or default to light
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    
-    // Update theme toggle icon
-    updateThemeIcon(savedTheme);
-}
-
-function updateThemeIcon(theme) {
-    const themeIcon = document.querySelector('.theme-icon');
-    if (themeIcon) {
-        themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-    }
-}
-
-function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-}
-
-// Add theme toggle event listener after header is loaded
-function setupThemeToggle() {
-    const themeToggle = document.getElementById('theme-toggle');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', toggleTheme);
-    }
-}
-
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', async () => {
-    initializeTheme();
-    await initializeIncludes();
-    setupThemeToggle();
-}); 
+document.addEventListener('DOMContentLoaded', initializeIncludes); 

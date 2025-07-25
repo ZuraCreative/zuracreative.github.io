@@ -1,31 +1,4 @@
-/* CSS Custom Properties for Theme */
-:root {
-    --bg-primary: #fff;
-    --bg-secondary: #f8f8f8;
-    --bg-dark: #000;
-    --text-primary: #000;
-    --text-secondary: #666;
-    --text-tertiary: #999;
-    --text-inverse: #fff;
-    --border-light: rgba(0, 0, 0, 0.1);
-    --border-medium: #eee;
-    --shadow-light: rgba(0, 0, 0, 0.08);
-    --shadow-medium: rgba(0, 0, 0, 0.12);
-}
-
-[data-theme="dark"] {
-    --bg-primary: #1a1a1a;
-    --bg-secondary: #2d2d2d;
-    --bg-dark: #fff;
-    --text-primary: #fff;
-    --text-secondary: #b3b3b3;
-    --text-tertiary: #888;
-    --text-inverse: #000;
-    --border-light: rgba(255, 255, 255, 0.1);
-    --border-medium: #333;
-    --shadow-light: rgba(0, 0, 0, 0.3);
-    --shadow-medium: rgba(0, 0, 0, 0.4);
-}
+/* Dark Mode Only Styles */
 
 /* Reset and Base Styles */
 * {
@@ -37,9 +10,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: var(--text-primary);
-    background: var(--bg-primary);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #fff;
+    background: #1a1a1a;
 }
 
 /* Header Styles */
@@ -48,16 +20,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     padding: 1rem 0;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-[data-theme="dark"] .header {
-    background: rgba(26, 26, 26, 0.95);
 }
 
 .header-container {
@@ -75,10 +42,9 @@ body {
     gap: 0.75rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: #fff;
     text-decoration: none;
     letter-spacing: -0.01em;
-    transition: color 0.3s ease;
 }
 
 .logo-icon {
@@ -93,7 +59,7 @@ body {
 }
 
 .nav-link {
-    color: var(--text-secondary);
+    color: #b3b3b3;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
@@ -101,11 +67,11 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--text-primary);
+    color: #fff;
 }
 
 .nav-link.active {
-    color: var(--text-primary);
+    color: #fff;
 }
 
 .header-cta {
@@ -135,42 +101,11 @@ body {
     border-color: #333;
 }
 
-/* Theme Toggle Button */
-.theme-toggle {
-    background: none;
-    border: none;
-    padding: 0.5rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.theme-toggle:hover {
-    background: var(--border-light);
-    transform: scale(1.1);
-}
-
-.theme-icon {
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-}
-
-.theme-toggle:active .theme-icon {
-    transform: rotate(180deg);
-}
-
 /* Footer Styles */
 .footer {
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border-medium);
+    background: #2d2d2d;
+    border-top: 1px solid #333;
     padding: 4rem 0 2rem 0;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .footer-container {
@@ -190,27 +125,24 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-primary);
+    color: #fff;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    transition: color 0.3s ease;
 }
 
 .footer-brand p {
-    color: var(--text-secondary);
+    color: #b3b3b3;
     font-size: 1rem;
     line-height: 1.6;
     max-width: 300px;
-    transition: color 0.3s ease;
 }
 
 .footer-section h4 {
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: var(--text-primary);
-    transition: color 0.3s ease;
+    color: #fff;
 }
 
 .footer-links {
@@ -223,27 +155,25 @@ body {
 }
 
 .footer-links a {
-    color: var(--text-secondary);
+    color: #b3b3b3;
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: var(--text-primary);
+    color: #fff;
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--border-medium);
+    border-top: 1px solid #333;
     padding-top: 2rem;
     text-align: center;
-    transition: border-color 0.3s ease;
 }
 
 .footer-bottom p {
-    color: var(--text-tertiary);
+    color: #888;
     font-size: 0.9rem;
-    transition: color 0.3s ease;
 }
 
 /* Common Layout Styles */
@@ -264,6 +194,7 @@ body {
     margin-bottom: 3rem;
     letter-spacing: -0.02em;
     text-align: center;
+    color: #fff;
 }
 
 /* Button Styles */
@@ -289,25 +220,13 @@ body {
 }
 
 .btn-secondary {
-    background: transparent;
-    color: var(--text-primary);
-    border: 2px solid var(--text-primary);
+    background: #fff;
+    color: #000;
+    border: 2px solid #fff;
     transition: all 0.2s ease;
 }
 
 .btn-secondary:hover {
-    background: var(--text-primary);
-    color: var(--text-inverse);
-}
-
-/* Dark mode specific styling for secondary buttons */
-[data-theme="dark"] .btn-secondary {
-    background: #fff;
-    color: #000;
-    border-color: #fff;
-}
-
-[data-theme="dark"] .btn-secondary:hover {
     background: #f0f0f0;
     color: #000;
     border-color: #f0f0f0;
@@ -355,13 +274,5 @@ body {
         text-align: center;
     }
 
-    .theme-toggle {
-        margin-right: 0.5rem;
-        width: 36px;
-        height: 36px;
-    }
 
-    .theme-icon {
-        font-size: 1rem;
-    }
 } 
